@@ -1,0 +1,13 @@
+.sectiontop {
+    width: 100%;
+    height: fit-content;
+    position: sticky;
+    top: 0px !important;
+    background: rgb(23,23,23);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
