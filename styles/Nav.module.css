@@ -46,7 +46,7 @@
     max-width: 300px;
     height: 100%;
     position: relative;
-    background-color: rgb(243, 64, 100);
+    background-color: rgba(0, 30, 60, 0.2);
     display: flex;
     justify-content: center;
     align-items: center;
