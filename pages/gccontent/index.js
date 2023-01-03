@@ -1,14 +1,22 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Layout from "../../components/Layout";
-import Nav from "../../components/Nav";
-import TitleOfPage from "../../components/TitleOfPage";
 import styles from '../../styles/gcContent.module.css'
+import { IoWarning } from "react-icons/io5";
 
 export default function gccontent() {
 
     const [seqInput, setSequenceInput] = useState('')
     const [gcCal, setgcCal] = useState(0)
     const [atCal, setatCal] = useState(0)
+    const [inpError, setInpError] = useState('')
+
+    useEffect(() => {
+        let unsub = setTimeout(() => {
+            setInpError('')
+        }, 3000)
+
+        return () => clearTimeout(unsub)
+    }, [inpError])
 
     const contentcalculate = () => {
         let A = 0;
@@ -26,7 +34,7 @@ export default function gccontent() {
             } else if (seqInput[i].toUpperCase() == 'T') {
                 T++
             } else {
-                alert('Enter valid sequence')
+                setInpError('Enter valid sequence')
                 return
             }
         }
@@ -47,7 +55,10 @@ export default function gccontent() {
                         value={seqInput.toUpperCase()}
                         onChange={(e) => setSequenceInput(e.target.value)}
                     ></textarea>
-                    <input type="button" className={styles.comp__btn} value="hit hard" onClick={contentcalculate} />
+                    {inpError && <div className={styles.showarning}><IoWarning size={20} />
+                        <p className={styles.showarningText}>{inpError}</p></div>}
+                        {seqInput ? <input type="button" className={styles.btn} value="hit hard" onClick={contentcalculate} /> :
+                            <input type="button" className={styles.btn} style={{ background: 'transparent', cursor: 'no-drop' }} value="hit hard" onClick={contentcalculate} disabled />}
                 </form>
             </div>
 

@@ -81,7 +81,7 @@ body> .top {
     margin-left: 4px;
 }
 
-.comp__btn {
+.btn {
     width: 140px;
     height: 40px;
     display: grid;
@@ -98,7 +98,7 @@ body> .top {
     text-transform: uppercase;
 }
 
-.comp__btn:hover {
+.btn:hover {
     background-color: #151515;
     color: #fff;
     border: 1px solid crimson;
@@ -173,15 +173,6 @@ body> .top {
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-    }
-
-
-    .comp__top>h3 {
-        font-size: 1em;
-    }
-
-    .complementary__form>label:first-child {
-        font-size: 0.8em;
     }
 
     .comp__bottomResult>div.same {

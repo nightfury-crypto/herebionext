@@ -1,0 +1,225 @@
+body>.top {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden !important;
+    position: relative;
+}
+
+.sanger__bottom {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+}
+
+.sanger__form {
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+}
+
+.sanger__form {
+    padding-left: 20px;
+}
+
+.txtArea {
+    background-color: transparent;
+    padding: 10px;
+    color: #fff;
+    margin-bottom: 20px;
+    resize: none;
+    width: 100%;
+    max-width: 500px;
+    height: 100px;
+}
+
+.label {
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 400;
+    color: rgb(235, 99, 126);
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    width: 140px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    margin-top: 10px;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+    background-color: crimson;
+    color: #fff;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    transition: all 0.5s ease-in-out;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background-color: #151515;
+    color: #fff;
+    border: 1px solid rgb(255, 101, 132);
+}
+
+.showarning {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, sans-serif !important;
+    color: rgb(231, 231, 99);
+}
+
+.showarningText {
+    margin-left: 3px;
+    margin-bottom: 0 !important;
+}
+
+/* sequence display */
+.seqdisplay {
+    width: 100%;
+    height: fit-content;
+    font-size: 0.9em !important;
+    padding: 3px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.seqdisplay p::-webkit-scrollbar {
+    height: 1px !important;
+}
+
+.seqdisplay p::-webkit-scrollbar-thumb {
+    background-color: #fff !important;
+}
+
+.seqdisplay p {
+    margin-bottom: 0px !important;
+    overflow-x: auto !important;
+    padding: 10px;
+    user-select: all !important;
+}
+
+.contenttitle {
+    width: fit-content !important;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(218, 82, 109);
+    border-radius: 8px;
+    padding: 3px 8px;
+    margin-bottom: 2px;
+    overflow: hidden !important;
+}
+
+/*  */
+
+.main {
+    flex: 1 !important;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 8px;
+    position: relative;
+    overflow-y: hidden !important;
+}
+
+/* bands display */
+
+.bandsdisplay {
+    width: 100% !important;
+    max-width: 400px;
+    position: sticky;
+    top: 0 !important;
+}
+
+.bandsdisplay>.accordion {
+    width: 100% !important;
+}
+
+.accordionitem button {
+    background-color: #343434 !important;
+    color: rgb(255, 255, 255);
+}
+
+.accordionbody {
+    background-color: rgb(84, 84, 84) !important;
+    word-wrap: break-word;
+}
+
+/*  */
+
+/* grid */
+.graphgrid {
+    flex: 1;
+    width: 100%;
+
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden !important;
+}
+
+.maingrapgh {
+    width: 100%;
+    max-width: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box {
+    border: 1px solid #151515;
+    background-color: black;
+    width: 44px;
+    height: 26px;
+    font-size: 0.7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*  */
+@media screen and (max-width:671px) {
+    .sanger__form {
+        padding: 4px !important;
+    }
+    
+    .txtArea {
+        margin-bottom: 10px;
+    }
+    
+    .bandsdisplay {
+        padding: 8px !important;
+    }
+}
+
+@media screen and (max-width:622px) {
+    .main {
+        flex-direction: column !important;
+    }
+}

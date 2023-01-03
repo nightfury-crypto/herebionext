@@ -105,8 +105,8 @@ export default function Complementary() {
                                 <span>reverse Complementary</span>
                             </label>
                         </span>
-                        {seqInput ? <input type="button" className={styles.comp__btn} value="hit hard" onClick={complementarySubmit} /> :
-                            <input type="button" className={styles.comp__btn} style={{ background: 'transparent', cursor: 'no-drop' }} value="hit hard" onClick={complementarySubmit} disabled />}
+                        {seqInput ? <input type="button" className={styles.btn} value="hit hard" onClick={complementarySubmit} /> :
+                            <input type="button" className={styles.btn} style={{ background: 'transparent', cursor: 'no-drop' }} value="hit hard" onClick={complementarySubmit} disabled />}
 
                     </form>
                 </div>

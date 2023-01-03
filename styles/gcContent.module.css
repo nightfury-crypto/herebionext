@@ -47,7 +47,6 @@ body> .top {
 }
 
 .label {
-    font-size: 1rem !important;
     font-family: 'Poppins', sans-serif !important;
     font-weight: 400;
     color: rgb(235, 99, 126);
@@ -55,7 +54,7 @@ body> .top {
     margin-bottom: 10px;
 }
 
-.comp__btn {
+.btn {
     width: 140px;
     height: 40px;
     display: grid;
@@ -72,7 +71,7 @@ body> .top {
     text-transform: uppercase;
 }
 
-.comp__btn:hover {
+.btn:hover {
     background-color: #151515;
     color: #fff;
     border: 1px solid crimson;
@@ -104,6 +103,20 @@ body> .top {
     padding: 6px;
 }
 
+.showarning {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, sans-serif !important;
+    color: rgb(231, 231, 99);
+}
+
+.showarningText {
+    margin-left: 3px;
+    margin-bottom: 0 !important;
+}
 
 @media screen and (max-width:671px) {
     .contentgc__form  {
