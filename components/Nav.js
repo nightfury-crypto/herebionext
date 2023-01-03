@@ -31,7 +31,7 @@ export default function Nav() {
                     <Box
                         sx={{
                             width: 320,
-                            pl: '24px',
+                            pl: '30px',
                         }}
                     >
                         <List
@@ -78,14 +78,21 @@ export default function Nav() {
                                 <List sx={{ '--List-gap': '0px' }}>
                                     <ListItem>
                                         <ListItemButton selected>
-                                            <Link href="/">HOME</Link>
+                                            <Link href="/">Home</Link>
+                                        </ListItemButton>
+                                    </ListItem>
+                                </List>
+                                <List sx={{ '--List-gap': '0px' }}>
+                                    <ListItem>
+                                        <ListItemButton selected>
+                                            <Link href="/">About</Link>
                                         </ListItemButton>
                                     </ListItem>
                                 </List>
                             </ListItem>
                             <ListItem
                                 nested
-                                sx={{ my: 1 }}
+                                sx={{ my: 0 }}
                                 startAction={
                                     <IconButton variant="plain" size="sm" color="neutral" onClick={() => setOpen1(!open1)} >
                                         <KeyboardArrowDown
@@ -117,7 +124,7 @@ export default function Nav() {
                                         </ListItem>
                                         <ListItem>
                                             <ListItemButton>
-                                                <Link href="gccontent">
+                                                <Link href="/gccontent">
                                                     2. GC/AT Content
                                                 </Link>
                                             </ListItemButton>
@@ -132,6 +139,13 @@ export default function Nav() {
                                     </List>
                                 )}
                             </ListItem>
+                            <List sx={{ '--List-gap': '0px' }}>
+                                    <ListItem>
+                                        <ListItemButton selected>
+                                            <Link href="/">Contact me</Link>
+                                        </ListItemButton>
+                                    </ListItem>
+                                </List>
                         </List>
                     </Box>
                 </div>
@@ -139,26 +153,3 @@ export default function Nav() {
         </div>
     )
 }
-
-{/* <ul>
-    <Link href="/"><li>Home</li></Link>
-    <li>
-        <div className={styles.servicebar}>
-            <span>Services</span>
-        </div>
-        <ul className={styles.serviceslist}>
-            <Link href="/complementary" passHref><li>COMPLEMENTARY</li></Link>
-            <Link href="/gccontent" passHref><li>GC/AT Content</li></Link>
-            <li onClick={() => setShowSequencing(!showsequencing)}>
-                <div className={styles.servicebar} style={{ width: '100%' }}>
-                    <span>Sequencing</span>
-                    {showsequencing ? <BsFillArrowDownCircleFill /> : <BsFillArrowRightCircleFill />}
-                </div>
-                {showsequencing && <ul className={styles.serviceslist}>
-                    <Link href="/sequencing/sanger" passHref><li>SANGER</li></Link>
-                </ul>}
-            </li>
-        </ul>
-    </li>
-    <Link href="/contactme"><li>Contact Me</li></Link>
-</ul> */}
