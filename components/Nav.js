@@ -71,11 +71,11 @@ export default function Nav() {
                             })} >
                             <ListItem nested>
                                 <ListItem component="div" startAction={<ReceiptLong />}>
-                                    <Typography level="body3" sx={{ textTransform: 'uppercase' }}>
+                                    <Typography level="body1" sx={{ textTransform: 'uppercase' }}>
                                         HERE BIO
                                     </Typography>
                                 </ListItem>
-                                <List sx={{ '--List-gap': '0px' }}>
+                                <List sx={{ '--List-gap': '8px' }}>
                                     <ListItem>
                                         <ListItemButton selected>
                                             <Link href="/">Home</Link>
@@ -92,7 +92,7 @@ export default function Nav() {
                             </ListItem>
                             <ListItem
                                 nested
-                                sx={{ my: 0 }}
+                                sx={{ my: 1 }}
                                 startAction={
                                     <IconButton variant="plain" size="sm" color="neutral" onClick={() => setOpen1(!open1)} >
                                         <KeyboardArrowDown
@@ -139,13 +139,15 @@ export default function Nav() {
                                     </List>
                                 )}
                             </ListItem>
-                            <List sx={{ '--List-gap': '0px' }}>
+                            <ListItem nested>
+                                <List sx={{ '--List-gap': '0px' }}>
                                     <ListItem>
                                         <ListItemButton selected>
-                                            <Link href="/">Contact me</Link>
+                                            <Link href="/">Contact</Link>
                                         </ListItemButton>
                                     </ListItem>
                                 </List>
+                            </ListItem>
                         </List>
                     </Box>
                 </div>
