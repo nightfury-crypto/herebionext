@@ -16,7 +16,7 @@ export default function App({ Component, pageProps }) {
   return <>
     <Head>
       <title>Here Bio</title>
-      <meta charset="utf-8" />
+      <meta charSet="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta name="description" content="Here Bio is a web app related to biology. Helps in visualising the algorithms related to biology. It is a powerful tool which is actively maintaining and new tools are being added here." />
 
