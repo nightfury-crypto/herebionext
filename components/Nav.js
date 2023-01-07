@@ -15,10 +15,7 @@ import KeyboardArrowDown from '@mui/icons-material/KeyboardArrowDown';
 export default function Nav() {
 
     const [isOpened, setIsOpened] = useState(false)
-    const [open1, setOpen1] = useState(false);
-    const [open2, setOpen2] = useState(false);
-    const [showservices, setShowServices] = useState(false)
-    const [showsequencing, setShowSequencing] = useState(false)
+    const [open1, setOpen1] = useState(true);
 
     return (
         <div className={styles.nav}>
@@ -82,13 +79,13 @@ export default function Nav() {
                                         </ListItemButton>
                                     </ListItem>
                                 </List>
-                                <List sx={{ '--List-gap': '0px' }}>
+                                {/* <List sx={{ '--List-gap': '0px' }}>
                                     <ListItem>
                                         <ListItemButton selected>
                                             <Link href="/">About</Link>
                                         </ListItemButton>
                                     </ListItem>
-                                </List>
+                                </List> */}
                             </ListItem>
                             <ListItem
                                 nested
@@ -139,7 +136,7 @@ export default function Nav() {
                                     </List>
                                 )}
                             </ListItem>
-                            <ListItem nested>
+                            {/* <ListItem nested>
                                 <List sx={{ '--List-gap': '0px' }}>
                                     <ListItem>
                                         <ListItemButton selected>
@@ -147,7 +144,7 @@ export default function Nav() {
                                         </ListItemButton>
                                     </ListItem>
                                 </List>
-                            </ListItem>
+                            </ListItem> */}
                         </List>
                     </Box>
                 </div>
