@@ -25,7 +25,7 @@ export default function App({ Component, pageProps }) {
       <meta property="og:type" content="website" />
       <meta property="og:title" content="Here Bio | Can do task related to biology efficiently" />
       <meta property="og:description" content="Here Bio is a web app related to biology. Helps in visualising the algorithms related to biology. It is a powerful tool which is actively maintaining and new tools are being added here." />
-      <meta property="og:image" content="https://herebio.works/private/homepage.png" />
+      <meta property="og:image" content="https://github.com/nightfury-crypto/herebionext/blob/main/public/homepage.png?raw=true" />
 
       {/* <!-- Twitter Meta Tags --> */}
       <meta name="twitter:card" content="summary_large_image" />
@@ -33,7 +33,7 @@ export default function App({ Component, pageProps }) {
       <meta property="twitter:url" content="https://herebio.works/" />
       <meta name="twitter:title" content="Here Bio | Can do task related to biology efficiently" />
       <meta name="twitter:description" content="Here Bio is a web app related to biology. Helps in visualising the algorithms related to biology. It is a powerful tool which is actively maintaining and new tools are being added here." />
-      <meta name="twitter:image" content="https://herebio.works/private/homepage.png" />
+      <meta name="twitter:image" content="https://github.com/nightfury-crypto/herebionext/blob/main/public/homepage.png?raw=true" />
       <meta name="google-site-verification" content="-wc_Rn25imTTxjg3rXFOFv_ykXWLLjSIJhPknvsV1UQ" />
       <link rel="icon" href="/favicon.ico" />
     </Head>
