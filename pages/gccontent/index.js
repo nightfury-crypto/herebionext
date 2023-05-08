@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Layout from "../../components/Layout";
 import styles from '../../styles/gcContent.module.css'
 import { IoWarning } from "react-icons/io5";
+import Head from "next/head";
 
 export default function gccontent() {
 
@@ -44,6 +45,11 @@ export default function gccontent() {
         setatCal((at / seqInput.length) * 100)
     }
     return (
+        <>
+                <Head>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8417097523419752"
+     crossOrigin="anonymous"></script>
+        </Head>
         <div className={styles.top}>
             <Layout titleText={'GC/AT CONTENT'} />
             <div className={styles.contentgc__bottom}>
@@ -81,5 +87,6 @@ export default function gccontent() {
                 </table>
             </div> : <></>}
         </div>
+                            </>
     )
 }

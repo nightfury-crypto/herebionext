@@ -4,6 +4,7 @@ import styles from '../styles/Home.module.css'
 import Layout from '../components/Layout'
 import Footer from '../components/Footer'
 
+
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -18,6 +19,11 @@ export default function Home() {
     });
 }
   return (
+    <>
+    <Head>
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8417097523419752"
+     crossorigin="anonymous"></script>
+    </Head>
       <main className={styles.main}>
         <Layout />
         <div className={styles.home}>
@@ -31,5 +37,6 @@ export default function Home() {
         </div>
         <Footer />
       </main>
+    </>
   )
 }

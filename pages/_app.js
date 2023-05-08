@@ -36,6 +36,10 @@ export default function App({ Component, pageProps }) {
       <meta name="twitter:image" content="https://github.com/nightfury-crypto/herebionext/blob/main/public/homepage.png?raw=true" />
       <meta name="google-site-verification" content="-wc_Rn25imTTxjg3rXFOFv_ykXWLLjSIJhPknvsV1UQ" />
       <link rel="icon" href="/favicon.ico" />
+      
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8417097523419752"
+     crossOrigin="anonymous"></script>
+        
     </Head>
     <Component {...pageProps} />
   </>

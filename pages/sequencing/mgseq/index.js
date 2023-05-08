@@ -44,7 +44,7 @@ export default function SangerHome() {
      crossOrigin="anonymous"></script>
         </Head>
         <div className={styles.top}>
-            <Layout titleText={'SANGER SEQUENCING'} />
+            <Layout titleText={'Maxam-Gilbert'} />
             <div className={styles.sanger__bottom}>
                 <form className={styles.sanger__form}>
                     <label htmlFor="seqinput" className={styles.label}>Enter Sequence - </label>

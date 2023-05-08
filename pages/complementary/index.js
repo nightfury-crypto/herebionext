@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import styles from '../../styles/Complementary.module.css'
 import TitleOfPage from '../../components/TitleOfPage';
 import Layout from '../../components/Layout';
+import Head from 'next/head';
 
 
 export default function Complementary() {
@@ -66,6 +67,11 @@ export default function Complementary() {
         }
     }
     return (
+        <>
+                <Head>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8417097523419752"
+     crossOrigin="anonymous"></script>
+        </Head>
         <div className={styles.top}>
             <Layout titleText={'COMPLEMENTARY'} />
             <div className={styles.complementary}>
@@ -76,7 +82,7 @@ export default function Complementary() {
                             placeholder='Enter DNA/RNA sequence'
                             value={seqInput.toUpperCase()}
                             onChange={(e) => setSequenceInput(e.target.value)}
-                        ></textarea>
+                            ></textarea>
                         <label style={{ marginBottom: '20px' }}>------ Options ------</label>
                         <span className={styles.seqoption}>
                             <label className={styles.sc}>Type - </label>
@@ -121,6 +127,7 @@ export default function Complementary() {
 
             </div>
         </div>
+                            </>
     )
 }
 

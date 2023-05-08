@@ -133,6 +133,13 @@ export default function Nav() {
                                                 </Link>
                                             </ListItemButton>
                                         </ListItem>
+                                        <ListItem>
+                                            <ListItemButton>
+                                                <Link href="/sequencing/sanger">
+                                                    3. Maxam-Gilbert Sequencing
+                                                </Link>
+                                            </ListItemButton>
+                                        </ListItem>
                                     </List>
                                 )}
                             </ListItem>

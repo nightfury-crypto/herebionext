@@ -149,12 +149,12 @@ export default function SangerSequencing() {
 
     return (
         <>
-        <Head>
+                <Head>
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8417097523419752"
      crossOrigin="anonymous"></script>
         </Head>
         <div className={styles.top}>
-            <Layout titleText={'SANGER SEQUENCING'} />
+            <Layout titleText={'Maxam-Gilbert'} />
             <div className={styles.sanger__bottom}>
 
                 {/* sequence display */}
@@ -203,6 +203,6 @@ export default function SangerSequencing() {
                 </div>
             </div>
         </div>
-                                        </>
+        </>
     )
 }
